@@ -1,0 +1,36 @@
+// Biblioteca responsavel por entrada e saida de dados
+#include<iostream>
+
+using namespace std;
+int main (){
+    // Declaração de variaveis
+    int idade, opc=1;
+    float altura;
+    string nome, estado;
+    bool casado; 
+    // Preparacodigo paraefetuar repetição
+    while(opc==1){    
+    // Recebe e solicita os dadose agrega-os nas devidas variaveis ants declaradas
+       cout << "Informe sua idade: ";
+       cin >> idade;
+       cout << "Informe sua altura: ";
+       cin >> altura;
+       cout << "Informe seu nome: ";
+       cin >> nome;
+       cout << "Casado ou solteiro? (1: SIM / 0: NAO)   ";
+       cin >> casado;
+    // Hora de exibir os dados informados...
+    // Condicional, onde exibe resultado de acordo com valor agregado em bool
+    if(casado>=1)
+       cout << "\n\nO senhor(a) "<< nome <<", possui atualmente "<< idade <<" anos e "<< altura <<"mts de altura.\nAtualmente ele(a) e casado(a).\n\n";
+    else
+       cout << "\n\nO senhor(a) "<< nome <<", possui atualmente "<< idade <<" anos e "<< altura <<"mts de altura.\nAtualmente ele(a) e solteiro(a).\n\n";
+    // Pausa o programa antes de prosseguir e exige que o usuario 
+       system("pause");
+    // Repetição Loop while
+    cout << "Deseja fazer novamente? \n\n1: SIM \n0: NAO\n\n";
+    cin >> opc;
+    // Apaga oque estava escrito antes de executar a repetição
+       system("cls");
+    }
+    }
