@@ -1,23 +1,44 @@
 // Biblioteca responsavel por entrada e saida de dados
 #include<iostream>
+#include<ctype.h>
 
 using namespace std;
 int main (){
     // Declaração de variaveis
-    int idade, opc=1;
-    float altura;
-    string nome, estado;
-    bool casado; 
-    // Preparacodigo paraefetuar repetição
-    while(opc==1){    
+    int opc=1;
+        string nome, estado;
+   
+    // Prepara o codigo para efetuar repetição
+    while(opc==1){ 
+    // Atribuo valores as variaveis depois da repetição ou então elas vão herdar os dados inseridos no primeiro loop               
+    int idade=0;
+    float altura=0;
+     bool casado=5;    
     // Recebe e solicita os dadose agrega-os nas devidas variaveis ants declaradas
+       // Na primeira saida e entrada de dados testarei se o valor esta dentro do intervalo 1 - 115
+       //Idade
+       while (idade <=1 || idade >=116){
        cout << "Informe sua idade: ";
        cin >> idade;
+           if(idade <=1 || idade >=116){
+           cout << "Informe uma idade valida entre 1 e 115 anos!\n\n";
+           }
+           else;
+           }
+       // altura
+       while (altura <=0.5 || altura >=5.0){
        cout << "Informe sua altura: ";
        cin >> altura;
+           if (altura <=0.5 || altura >=5.0){
+           cout << "Informe uma altura valida entre 0.5 e 5.0 metros!\n\n";
+           }
+           else;
+           }
+       // nome - aceita tanto numeros quanto caracteres        
        cout << "Informe seu nome: ";
        cin >> nome;
-       cout << "Casado ou solteiro? (1: SIM / 0: NAO)   ";
+       // casado - aceita apenas 1 || 0
+       cout << "Casado ou solteiro? (1: SIM / 0: NAO)\n\n";
        cin >> casado;
     // Hora de exibir os dados informados...
     // Condicional, onde exibe resultado de acordo com valor agregado em bool
