@@ -6,17 +6,16 @@ using namespace std;
 int main (){
     // Declaração de variaveis
     int opc=1;
-        string nome, estado;
-   
+    string nome, estado;
     // Prepara o codigo para efetuar repetição
     while(opc==1){ 
     // Atribuo valores as variaveis depois da repetição ou então elas vão herdar os dados inseridos no primeiro loop               
     int idade=0;
     float altura=0;
-     bool casado=5;    
+    bool casado;    
     // Recebe e solicita os dadose agrega-os nas devidas variaveis ants declaradas
        // Na primeira saida e entrada de dados testarei se o valor esta dentro do intervalo 1 - 115
-       //Idade
+       // Idade
        while (idade <=1 || idade >=116){
        cout << "Informe sua idade: ";
        cin >> idade;
@@ -25,7 +24,7 @@ int main (){
            }
            else;
            }
-       // altura
+       // Altura
        while (altura <=0.5 || altura >=5.0){
        cout << "Informe sua altura: ";
        cin >> altura;
@@ -34,10 +33,10 @@ int main (){
            }
            else;
            }
-       // nome - aceita tanto numeros quanto caracteres        
+       // Nome - aceita tanto numeros quanto caracteres        
        cout << "Informe seu nome: ";
        cin >> nome;
-       // casado - aceita apenas 1 || 0
+       // Casado - aceita apenas 1 || 0
        cout << "Casado ou solteiro? (1: SIM / 0: NAO)\n\n";
        cin >> casado;
     // Hora de exibir os dados informados...
