@@ -37,7 +37,7 @@ int main (){
        cout << "Informe seu nome: ";
        cin >> nome;
        // Casado - aceita apenas 1 || 0
-       cout << "Casado ou solteiro? (1: SIM / 0: NAO)\n\n";
+       cout << "Casado ou solteiro? (1: SIM / 0: NAO): ";
        cin >> casado;
     // Hora de exibir os dados informados...
     // Condicional, onde exibe resultado de acordo com valor agregado em bool
